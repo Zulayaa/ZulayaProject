@@ -264,13 +264,6 @@ public class ZulayaProject extends Application {
         stage.show();
         }
 
-        //Collision
-    public static boolean collide(Polygon character, Polygon platform) {
-        Shape collisionArea = Shape.intersect(character, platform);
-        return collisionArea.getBoundsInLocal().getWidth() != -1;
-    }
-
-
     public static void main(String[] args) {
 
         launch(ZulayaProject.class);
